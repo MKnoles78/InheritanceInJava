@@ -1,6 +1,6 @@
 //CommissionEmployee class represents an employee paid a percentage of gross sales
 
-public class CommisionEmployee extends Object {
+public class CommissionEmployee extends Object {
 
 	private final String firstName;
 	private final String lastName;
@@ -9,11 +9,9 @@ public class CommisionEmployee extends Object {
 	private double commissionRate; // commission percentage
 
 	// five-argument constructor
-	public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
-		//implicit call to Object's default constructor occurs here
-		
-		
-		
+	public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales,
+			double commissionRate) {
+		// implicit call to Object's default constructor occurs here
 	}
 
 }
