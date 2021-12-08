@@ -1,4 +1,4 @@
 
-public class TwoDimensionalShapes {
+public class TwoDimensionalShapes extends Shapes {
 
 }
