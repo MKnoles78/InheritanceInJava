@@ -70,4 +70,22 @@ public class CommissionEmployee extends Object {
 		this.commissionRate = commissionRate;
 	}
 
+	// return commission rate
+	public double getCommissionRate() {
+		return commissionRate;
+	}
+
+	// calculate earnings
+	public double earnings() {
+		return commissionRate * grossSales;
+	}
+
+	// return String representation of CommissionEmployee object
+	@Override // indicates that this method overrides a superclass method
+	public String toString() {
+		return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f", "commission employee", firstName, lastName,
+				"social security number", socialSecurityNumber, "grossSales", grossSales, "commission rate",
+				commissionRate);
+	}
+
 }
