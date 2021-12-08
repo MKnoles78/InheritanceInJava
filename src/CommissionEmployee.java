@@ -32,4 +32,42 @@ public class CommissionEmployee extends Object {
 
 	}
 
+	// return first name
+	public String getFirstName() {
+		return firstName;
+	}
+
+	// return last name
+	public String getLastName() {
+		return lastName;
+	}
+
+	// return social security number
+	public String getSociaSecurityNumber() {
+		return socialSecurityNumber;
+	}
+
+	// set gross sales amount
+	public void setGrossSales(double grossSales) {
+		if (grossSales < 0.0) {
+			throw new IllegalArgumentException("Gross sales must be >= 0.0");
+		}
+
+		this.grossSales = grossSales;
+	}
+
+	// return gross sales amount
+	public double getGrossSales() {
+		return grossSales;
+	}
+
+	// set commission rate
+	public void setCommissionRate(double commissionRate) {
+		if (commissionRate <= 0.0 || commissionRate >= 1.0) {
+			throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
+		}
+
+		this.commissionRate = commissionRate;
+	}
+
 }
