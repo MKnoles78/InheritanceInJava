@@ -1,3 +1,4 @@
+//Fig. 9.4: CommissionEmployee.java
 //CommissionEmployee class represents an employee paid a percentage of gross sales
 
 public class CommissionEmployee extends Object {

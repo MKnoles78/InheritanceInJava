@@ -1,3 +1,4 @@
+//Fig. 9.5: CommissionEmployeeTest.java
 //CommissionEmployee class test program
 public class CommissionEmployeeTest {
 
