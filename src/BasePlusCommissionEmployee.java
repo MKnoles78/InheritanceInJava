@@ -8,4 +8,10 @@ public class BasePlusCommissionEmployee {
 	private double commissionRate; // commission percentage
 	private double baseSalary; // base salary per week
 
+	// six-argument constructor
+	public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales,
+			double commissionRate, double baseSalary) {
+		// implicit call to Object's default constructor occurs here
+	}
+
 }
