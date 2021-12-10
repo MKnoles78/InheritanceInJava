@@ -20,7 +20,7 @@ public class BasePlusCommissionEmployee {
 		}
 
 		// if commissionRate is invalid throw exception
-		if (commissionRate <= 0.0 || commissionRate <= 1.0) {
+		if (commissionRate <= 0.0 || commissionRate >= 1.0) {
 			throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
 		}
 
