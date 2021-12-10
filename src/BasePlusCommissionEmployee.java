@@ -1,3 +1,4 @@
+//Fig. 9.6: BasePlusCommissionEmployee.java
 //BasePlusCommissionEmployee class represents an employee who receives a base salary in addition to commission
 
 public class BasePlusCommissionEmployee {
