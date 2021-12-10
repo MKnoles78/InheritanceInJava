@@ -1,3 +1,4 @@
+//Fig. 9.7: BasePlusCommissionEmployeeTest.java
 //BasePlusCommissionEmployee test program
 
 public class BasePlusCommissionEmployeeTest {
