@@ -91,4 +91,17 @@ public class BasePlusCommissionEmployee {
 		return baseSalary;
 	}
 
+	// calculate earnings
+	public double earnings() {
+		return baseSalary + (commissionRate * grossSales);
+	}
+
+	// return String representation of BasePlusCommissionEmployee
+	@Override
+	public String toString() {
+		return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f%n%s: %.2f", "base-salaried commission employee",
+				firstName, lastName, "social security number", socialSecurityNumber, "gross sales", grossSales,
+				"commission rate", commissionRate, "base salary", baseSalary);
+	}
+
 }
