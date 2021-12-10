@@ -28,6 +28,13 @@ public class BasePlusCommissionEmployee {
 			throw new IllegalArgumentException("Base salary must be >= 0.0");
 		}
 
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.socialSecurityNumber = socialSecurityNumber;
+		this.grossSales = grossSales;
+		this.commissionRate = commissionRate;
+		this.baseSalary = baseSalary;
+
 	}
 
 }
