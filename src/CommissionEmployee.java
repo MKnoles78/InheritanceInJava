@@ -3,11 +3,11 @@
 
 public class CommissionEmployee extends Object {
 
-	private final String firstName;
-	private final String lastName;
-	private final String socialSecurityNumber;
-	private double grossSales; // gross weekly sales
-	private double commissionRate; // commission percentage
+	protected final String firstName;
+	protected final String lastName;
+	protected final String socialSecurityNumber;
+	protected double grossSales; // gross weekly sales
+	protected double commissionRate; // commission percentage
 
 	// five-argument constructor
 	public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales,
