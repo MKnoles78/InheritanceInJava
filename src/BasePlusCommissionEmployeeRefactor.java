@@ -34,16 +34,14 @@ public class BasePlusCommissionEmployeeRefactor extends CommissionEmployee {
 	@Override
 	public double earnings() {
 		// not allowed: commissionRate and grossSales private in superclass
-		return baseSalary + (commissionRate * grossSales);
+		return getBaseSalary() + super.earnings();
 	}
 
 	// return String representation of BasePlusCommissionEmployeeRefactor
 	@Override
 	public String toString() {
 		// now allowed: attempts to access private superclass members
-		return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f%n%s: %.2.f", "base-salaried commission employee",
-				firstName, lastName, "social security number", socialSecurityNumber, "gross sales", grossSales,
-				"commission rate", commissionRate, "base salary", baseSalary);
+		return String.format("%s %s%n%s: %.2f", "base-salaried", super.toString(), "base salary", getBaseSalary());
 
 	}
 
