@@ -44,7 +44,7 @@ public class CommissionEmployee extends Object {
 	}
 
 	// return social security number
-	public String getSociaSecurityNumber() {
+	public String getSocialSecurityNumber() {
 		return socialSecurityNumber;
 	}
 
@@ -78,15 +78,15 @@ public class CommissionEmployee extends Object {
 
 	// calculate earnings
 	public double earnings() {
-		return commissionRate * grossSales;
+		return getCommissionRate() * getGrossSales();
 	}
 
 	// return String representation of CommissionEmployee object
 	@Override // indicates that this method overrides a superclass method
 	public String toString() {
-		return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f", "commission employee", firstName, lastName,
-				"social security number", socialSecurityNumber, "grossSales", grossSales, "commission rate",
-				commissionRate);
+		return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f", "commission employee", getFirstName(),
+				getLastName(), "social security number", getSocialSecurityNumber(), "grossSales", getGrossSales(),
+				"commission rate", getCommissionRate());
 	}
 
 }
