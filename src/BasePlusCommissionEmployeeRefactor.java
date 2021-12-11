@@ -1,4 +1,4 @@
-//private superclass members cannot be accessed in a subclass
+//BasePlusCommissionEmployeeRefactor inherits protected instance variables from CommissionEmployee
 public class BasePlusCommissionEmployeeRefactor extends CommissionEmployee {
 	private double baseSalary; // base salary per week
 
