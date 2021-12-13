@@ -57,7 +57,7 @@ public class CommissionEmployee extends Object {
 		this.grossSales = grossSales;
 	}
 
-	// return gross sales amount
+	// return gross sales amount.
 	public double getGrossSales() {
 		return grossSales;
 	}
